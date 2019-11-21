@@ -5,50 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type='text/javascript' src='index.js'></script>
 </head>
 <html>
 
 <body>
   <div class="sticky">
     <div class="nav-mobile">
-      <div><i class="fa fa-home fa-2x" aria-hidden="true" title="Inicio"></i></div>
-      <div><i class="fa fa-universal-access fa-2x" aria-hidden="true" title="Servicios"></i></div>
-      <div><i class="fa fa-key fa-2x" aria-hidden="true" title="Instalaciones"></i></div>
-      <div><i class="fa fa-calendar fa-2x" aria-hidden="true" title="Reservar"></i></div>
+      <div class="inicio" onclick="navegar(this.className);"><i class="fa fa-home fa-2x" aria-hidden="true" title="Inicio"></i></div>
+      <div class="servicios" onclick="navegar(this.className);"><i class="fa fa-universal-access fa-2x" aria-hidden="true" title="Servicios"></i></div>
+      <div class="instalaciones" onclick="navegar(this.className);"><i class="fa fa-key fa-2x" aria-hidden="true" title="Instalaciones"></i></div>
+      <div class="reservar" onclick="navegar(this.className);"><i class="fa fa-calendar fa-2x" aria-hidden="true" title="Reservar"></i></div>
       <div><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Registro"></i></div>
       <div><i class="fa fa-sign-out fa-2x" aria-hidden="true" title="Login"></i></div>
     </div>
   </div>
 
   <ul class="sidenav">
-    <li><a href="#inicio"><i class="fa fa-home fa-2x" aria-hidden="true" title="Inicio"></i>
+    <li>
+      <a href="javascript:;" class="inicio" onclick="navegar(this.className);">
+        <i class="fa fa-home fa-2x" aria-hidden="true" title="Inicio"></i>
         <p>Inicio</p>
-      </a></li>
-    <li><a href="#servicios"><i class="fa fa-universal-access fa-2x" aria-hidden="true" title="Servicios"></i>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;" class="servicios" onclick="navegar(this.className);">
+        <i class="fa fa-universal-access fa-2x" aria-hidden="true" title="Servicios"></i>
         <p>Servicios</p>
-      </a></li>
-    <li><a href="#instalaciones"><i class="fa fa-key fa-2x" aria-hidden="true" title="Instalaciones"></i>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;" class="instalaciones" onclick="navegar(this.className);">
+        <i class="fa fa-key fa-2x" aria-hidden="true" title="Instalaciones"></i>
         <p>Instalaciones</p>
-      </a></li>
-    <li><a href="#reservar"><i class="fa fa-calendar fa-2x" aria-hidden="true" title="Reservar"></i>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;" class="reservar" onclick="navegar(this.className);">
+        <i class="fa fa-calendar fa-2x" aria-hidden="true" title="Reservar"></i>
         <p>Reservar</p>
-      </a></li>
-    <li><a href="#registro"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Registro"></i>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Registro"></i>
         <p>Registro</p>
-      </a></li>
-    <li><a href="#login"><i class="fa fa-sign-out fa-2x" aria-hidden="true" title="Login"></i>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <i class="fa fa-sign-out fa-2x" aria-hidden="true" title="Login"></i>
         <p>Login</p>
-      </a></li>
-
+      </a>
+    </li>
   </ul>
   <div class="content">
-    <h2>Responsive Sidenav Example</h2>
-    <p>This example use media queries to transform the sidenav to a top navigation bar when the screen size is 900px or
-      less.</p>
-    <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the
-      navigation links.</p>
-    <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-    <h3>Resize the browser window to see the effect.</h3>
+    <div class="pagina" id="pagina-inicio">
+
+    </div>
+
+    <div class="pagina" id="pagina-servicios">
+
+    </div>
+
+    <div class="pagina" id="pagina-instalaciones">
+
+    </div>
+
+    <div class="pagina" id="pagina-reservar">
+
+    </div>
   </div>
 </body>
 

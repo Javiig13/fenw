@@ -2,8 +2,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  overflow: hidden;
 }
 
 ul.sidenav {
@@ -60,11 +65,11 @@ ul.sidenav li a:hover {
 
 div.content {
   margin-left: 10%;
-  padding: 1px 16px;
-  display: flex;
+  /* padding: 1px 16px; */
+  /* display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #FCD966;
+  background-color: #FCD966; */
 }
 
 @media screen and (max-width: 900px) {
@@ -104,10 +109,37 @@ div.content {
     display: flex;
     align-items: center;
   }
+  div.nav-mobile>div:hover {
+    background: #1E6A77;
+  }
   div.nav-mobile>div:last-child {
     border: none;
   }
   i {
     align-self: auto;
   }
+}
+
+/* ---------------------------------PÁGINAS--------------------------------- */
+
+.pagina {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#pagina-inicio {
+  background-color: #FCD966;
+}
+
+#pagina-servicios {
+  background-color: thistle;
+}
+
+#pagina-instalaciones {
+  background-color: burlywood;
+}
+
+#pagina-reservar {
+  background-color: crimson;
 }
