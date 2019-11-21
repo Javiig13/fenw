@@ -126,20 +126,39 @@ div.content {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  padding: 16px 16px;
 }
 
 #pagina-inicio {
-  background-color: #FCD966;
+  background-color: #f8fba2;
 }
 
 #pagina-servicios {
-  background-color: thistle;
+  background-color: #a0e4b0;
+  justify-content: center;
+  align-items: center;
 }
 
 #pagina-instalaciones {
-  background-color: burlywood;
+  background-color: #f8fba2;
 }
 
 #pagina-reservar {
-  background-color: crimson;
+  background-color: #a0e4b0;
+}
+
+.servicios {
+  height: 100vh;
+}
+
+img {
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #237a57;
 }
