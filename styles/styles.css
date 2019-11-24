@@ -276,13 +276,13 @@ h3 {
 }
 
 #login div form>#form-username {
-  background-image: url(user.png);
+  background-image: url("../images/user.png");
   background-position: 8px 0px;
   background-repeat: no-repeat;
 }
 
 #login div form>#form-password {
-  background-image: url(password.png);
+  background-image: url("../images/password.png");
   background-position: 8px 0px;
   background-repeat: no-repeat;
 }

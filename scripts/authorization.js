@@ -11,6 +11,7 @@ $(document).ready(function () {
 });
 
 function iniciarSesion() {
+    debugger;
     if (typeof (Storage) !== undefined) {
         if (sessionStorage.token) {
             if (haExpiradoToken()) {
