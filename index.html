@@ -37,10 +37,10 @@
       <div class="registro" onclick="navegar(this.className);">
         <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Registro"></i>
       </div>
-      <div class="login" onclick="navegar(this.className);">
+      <div class="login boton-login" onclick="navegar(this.className);">
         <i class="fa fa-sign-in fa-2x" aria-hidden="true" title="Login"></i>
       </div>
-      <div class="logout" onclick="navegar(this.className);">
+      <div class="logout boton-logout" onclick="cerrarSesion();">
           <i class="fa fa-sign-in fa-2x" aria-hidden="true" title="Logout"></i>
         </div>
     </div>
@@ -77,13 +77,13 @@
         <p>Registro</p>
       </a>
     </li>
-    <li id="boton-login">
+    <li class="boton-login">
       <a href="javascript:;" class="login" onclick="navegar(this.className);">
         <i class="fa fa-sign-in fa-2x" aria-hidden="true" title="LogIn"></i>
         <p>Log In</p>
       </a>
     </li>
-    <li id="boton-logout">
+    <li class="boton-logout">
       <a href="javascript:;" class="logout" onclick="cerrarSesion();">
         <i class="fa fa-sign-out fa-2x" aria-hidden="true" title="LogOut"></i>
         <p>Log Out</p>

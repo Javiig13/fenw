@@ -1,11 +1,11 @@
 $(document).ready(function () {
     if (typeof (Storage) !== undefined) {
         if (!sessionStorage.token || haExpiradoToken()) {
-            $("#boton-login").show();
-            $("#boton-logout").hide();
+            $(".boton-login").show();
+            $(".boton-logout").hide();
         } else {
-            $("#boton-login").hide();
-            $("#boton-logout").show();
+            $(".boton-login").hide();
+            $(".boton-logout").show();
         }
     }
 });
@@ -57,8 +57,8 @@ function completarInicioSesion() {
 
             alert('Sesión válida hasta: ' + new Date(Number(sessionStorage.tokenDate)));
             desplazar(identificadores.INICIO);
-            $("#boton-login").hide();
-            $("#boton-logout").show();
+            $(".boton-login").hide();
+            $(".boton-logout").show();
         },
         error: function (error) {
             alert(JSON.stringify(error));
@@ -69,6 +69,6 @@ function completarInicioSesion() {
 function cerrarSesion() {
     sessionStorage.clear();
     desplazar(identificadores.LOGIN);
-    $("#boton-login").show();
-    $("#boton-logout").hide();
+    $(".boton-login").show();
+    $(".boton-logout").hide();
 }
