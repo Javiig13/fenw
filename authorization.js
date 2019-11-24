@@ -61,7 +61,7 @@ function completarInicioSesion() {
             $("#boton-logout").show();
         },
         error: function (error) {
-            alert(error);
+            alert(JSON.stringify(error));
         },
     });
 }
