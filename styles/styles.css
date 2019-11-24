@@ -198,6 +198,8 @@ h3 {
   background-color: #004d61;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  background: url("../tenis.jpg");
+  background-size: 100% 100%;
 }
 
 #container-info {
