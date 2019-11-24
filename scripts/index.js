@@ -17,7 +17,6 @@ const identificadores = {
 };
 
 function navegar(pagina) {
-    debugger;
     switch (pagina.split(' ')[0]) {
         case paginas.INICIO: desplazar(identificadores.INICIO); break;
         case paginas.SERVICIOS: desplazar(identificadores.SERVICIOS); break;
