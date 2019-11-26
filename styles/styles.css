@@ -61,12 +61,26 @@ p {
   font-size: 13px;
 }
 
+ul li p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
 ul.sidenav li a:hover {
   background: #1E6A77;
 }
 
 div.content {
   margin-left: 10%;
+}
+
+@media screen and (min-width: 1100px) {
+  .parrafo-cuerpo {
+    font-size: 15px;
+    text-align: justify;
+    padding: 12px;
+    line-height: 1.3;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -130,13 +144,27 @@ div.content {
   #container-info {
     flex-wrap: wrap !important;
   }
-  #pagina-inicio > #inicio {
+  #pagina-inicio>#inicio {
     display: none;
   }
   .pagina {
     padding: 0px 16px !important;
   }
-  .content > div > div:last-child{
+  .content>div>div:last-child {
+    margin-top: 50px;
+  }
+  ul li {
+    line-height: 1;
+  }
+  .images-desktop {
+    display: none;
+  }
+  #upm-disposicion {
+    display: none;
+  }
+  #upm-iframe {
+    width: 100% !important;
+    height: 90% !important;
     margin-top: 50px;
   }
 }
@@ -150,7 +178,7 @@ div.content {
   padding: 16px 16px;
 }
 
-#pagina-inicio, #pagina-servicios, #pagina-instalaciones, #pagina-reservar, #pagina-registro, #pagina-login {
+#pagina-inicio, #pagina-servicios, #pagina-reservar, #pagina-registro, #pagina-login {
   align-items: center;
 }
 
@@ -165,7 +193,7 @@ div.content {
 
 #pagina-instalaciones {
   background-color: #f8fba2;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #pagina-reservar {
@@ -326,4 +354,14 @@ h3 {
 #login div form input[type="submit"]:hover {
   color: #274a3e;
   background: white;
+}
+
+#upm-iframe {
+  width: 70%;
+  height: 100%;
+}
+
+#upm-disposicion {
+  width: 30%;
+  height: 100%;
 }
