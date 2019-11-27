@@ -34,7 +34,7 @@
       <div class="reservar" onclick="navegar(this.className);">
         <i class="fa fa-calendar fa-2x" aria-hidden="true" title="Reservar"></i>
       </div>
-      <div class="registro" onclick="navegar(this.className);">
+      <div class="registro boton-registrar" onclick="navegar(this.className);">
         <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Registro"></i>
       </div>
       <div class="login boton-login" onclick="navegar(this.className);">
@@ -71,7 +71,7 @@
         <p>Reservar</p>
       </a>
     </li>
-    <li>
+    <li class="boton-registrar">
       <a href="javascript:;" class="registro" onclick="navegar(this.className);">
         <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Registro"></i>
         <p>Registro</p>
@@ -180,6 +180,14 @@
       </div>
       <div id="upm-disposicion">
         <h2>Disponemos de:</h2>
+        <ul>
+          <li><p>4 pistas de cristal cubiertas</p></li>
+          <li><p>3 pistas de cristal semicubiertas</p></li>
+          <li><p>3 pistas de cemento exteriores</p></li>
+          <li><p>2 pistas de tenis</p></li>
+          <li><p>Vestuarios completos</p></li>
+          <li><p>Cafetería con terraza</p></li>
+        </ul>
       </div>
     </div>
 
@@ -191,7 +199,27 @@
     </div>
 
     <div class="pagina" id="pagina-registro">
-
+      <div id="login">
+        <div>
+          <img src="images/padel.jpg" alt="Padel Register" />
+        </div>
+        <div>
+          <h1>Bienvenido</h1>
+          <h3>Regístrese para continuar</h3>
+          <form onsubmit="validarFormulario(); return false;" autocomplete="off">
+            <input id="form-username-register" name="username" dir="rtl" type="text" autocomplete="off" placeholder="Usuario"
+              required>
+            <br />
+            <input id="form-password-register" name="password" dir="rtl" type="password" autocomplete="off"
+              placeholder="Contraseña" required>
+            <br />
+            <input id="form-password-register-repeat" name="password" dir="rtl" type="password" autocomplete="off"
+              placeholder="Repetir Contraseña" required>
+            <br />
+            <input type="submit" value="Iniciar Sesión" />
+          </form>
+        </div>
+      </div>
     </div>
 
     <div class="pagina" id="pagina-login">

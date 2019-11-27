@@ -129,7 +129,7 @@ div.content {
   i {
     align-self: auto;
   }
-  #pagina-login>#login>div:first-child {
+  #pagina-login>#login>div:first-child, #pagina-registro>#login>div:first-child {
     display: none;
   }
   #login {
@@ -138,8 +138,14 @@ div.content {
   #login>div:nth-child(2) {
     border-radius: 0% !important;
   }
-  #pagina-login {
-    padding: 0;
+  #pagina-login, #pagina-registro {
+    padding: 0 !important;
+  }
+  div#pagina-registro.pagina div#login div {
+    background: #FCD966;
+  }
+  div#pagina-login.pagina div#login div {
+    background: #a0e4b0;
   }
   #container-info {
     flex-wrap: wrap !important;
@@ -260,6 +266,7 @@ h3 {
 
 .columna {
   width: 98%;
+  margin-left: 1%;
 }
 
 .columna .cabecera-clases {
@@ -333,13 +340,13 @@ h3 {
   margin-bottom: 30px;
 }
 
-#login div form>#form-username {
+#login div form>#form-username, #login div form>#form-username-register {
   background-image: url("../images/user.png");
   background-position: 8px 0px;
   background-repeat: no-repeat;
 }
 
-#login div form>#form-password {
+#login div form>#form-password, #login div form>#form-password-register, #login div form>#form-password-register-repeat {
   background-image: url("../images/password.png");
   background-position: 8px 0px;
   background-repeat: no-repeat;
@@ -364,4 +371,14 @@ h3 {
 #upm-disposicion {
   width: 30%;
   height: 100%;
+}
+
+#upm-disposicion>ul>li>p {
+  color: #635656;
+  line-height: 2;
+  font-size: 1.4em;
+}
+
+#upm-disposicion ul li {
+  list-style: upper-roman;
 }

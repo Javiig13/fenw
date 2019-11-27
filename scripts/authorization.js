@@ -56,13 +56,13 @@ function completarInicioSesion() {
             sessionStorage.token = data;
             sessionStorage.tokenDate = fechaExpiracion.valueOf();
 
-            alert('Sesión válida hasta: ' + new Date(Number(sessionStorage.tokenDate)));
             desplazar(identificadores.INICIO);
+            $(".boton-registrar").hide();
             $(".boton-login").hide();
             $(".boton-logout").show();
         },
         error: function (error) {
-            alert(JSON.stringify(error));
+            alert('Lo sentimos, no se ha podido iniciar sesión, inténtelo de nuevo más tarde.');
         },
     });
 }
@@ -70,6 +70,16 @@ function completarInicioSesion() {
 function cerrarSesion() {
     sessionStorage.clear();
     desplazar(identificadores.LOGIN);
+    $(".boton-registrar").show();
     $(".boton-login").show();
     $(".boton-logout").hide();
+}
+
+function validarFormulario() {
+    const contrasenia = document.getElementById('form-password-register').value;
+    const contraseniaRepetida = document.getElementById('form-password-register-repeat').value;
+    
+    if (contrasenia !== contraseniaRepetida) {
+        alert('Las contraseñas introducidas no coinciden.');
+    }
 }
